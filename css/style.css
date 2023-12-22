@@ -811,7 +811,7 @@ section{
     /*因為還沒有active 所以要用到js 來把第一區的內容 產生到active裏頭*/
 
     headr .logo2 img{
-        width:0%
+        width:0%;
     }
 
     /*第二區 由於是響應式網站所以對手機版本做調整*/
@@ -844,10 +844,10 @@ section{
     }
 
     .category .box-container .box .content img{
-    
-    height: 130px;
-    margin: 10px;
-}
+        height: 150px;
+        width: 130px;
+        margin: 10px;
+    }
 
      /*第四區*/
      .menu .box-container .box{

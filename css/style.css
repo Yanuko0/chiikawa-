@@ -292,7 +292,7 @@ section{
 .category .box-container .box .content img{
     
     height: 170px;
-    margin: 10px;
+    margin: 15px;
 }
 /*改格子內img的照片大小寬高以及間距*/
 
@@ -838,6 +838,12 @@ section{
         /* flex-direction: column;*/
         flex: 1 1 auto;
     }
+
+    .category .box-container .box .content img{
+    
+    height: 130px;
+    margin: 10px;
+}
 
      /*第四區*/
      .menu .box-container .box{

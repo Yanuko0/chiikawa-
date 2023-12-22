@@ -844,10 +844,11 @@ section{
         flex: 1 1 auto;
     }
 
-    .category .box-container .box .content img{
-        height: 150px;
-        width: 130px;
-        margin: 10px;
+    .category .box-container{
+    
+        margin-left:50px;
+        margin-right: 50px;  
+          
     }
 
      /*第四區*/

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chiikawa</title>
+    <!--Font Awesom-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--有一些小圖示需要-->
+    <!--CSS連結-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--第一區 header-->
+    <header>
+        <a href="#" class="logo">
+            <img src="images/chiikawa/welcome.jpg" width="180" align="bottom">Chiikawa
+        <a href="#" class="logo2">
+            <img src="images/chiikawa/logo_chiikawamarket.jpg" width="300" align="middle">
+        </a>
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+            <!--fas f-bars 是從font Awesome來的 為了讓網站變成響應式網站(手機可以用)-->
+            <nav class="navbar">
+                <!--nav導覽列 下面是導覽列裡面的內容-->
+                <a href="home">新產品</a>
+                <a href="category">商品</a>
+                <a href="menu">娃娃</a>
+                <a href="gallery">圖片</a>
+                <a href="review">評論</a>
+                <a href="order">訂購</a>
+            </nav>
+        
+
+
+    </header>
+
+    <!--第二區 首頁-->
+    <section class="home" id="home"> <!-- 分類的屬性class -->
+        <div class="content">
+            <h3>吉伊卡哇</h3>
+            <p>chiikawa是日本插畫家Nagano設計的角色,被說成是「感覺又小又可愛的傢伙」
+            ,簡稱ちいかわ。可愛又令人印象深刻的畫風與角色，搭配上意外現實又充滿奇幻色彩的世界觀，很快就席捲了不只日本，甚至是全球的粉絲！</p>
+            <a href="#" class="btn">更多介紹</a>
+        </div>
+        <img src="../chiikawa/images/吉伊卡哇圖/chiikawa-gif/chiikawa-ちいかわ.gif" alt="" width="500px">
+    </section>
+   
+
+
+
+    <!--第三區 商品-->
+    <section class="category" id="category"> <!--category類別 -->
+        <h1 class="heading">Chiikawa<span>新產品</span></h1>
+        <div class="box-container" >
+            <!--第一個商品扭蛋-->
+            <div class="box">
+                <img class="image" src="../chiikawa/images/吉伊卡哇圖/chiikawa/扭蛋/800x_002.jpg">
+                <div class="content">
+                    <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/扭蛋/800x.jpg" alt="">
+                    <h3>扭蛋類</h3>
+                    <p>吉伊卡哇限定扭蛋</p>
+                </div>
+            </div>
+
+            <!--第二個商品小物-->
+            <div class="box">
+                <img class="image" src="../chiikawa/images/吉伊卡哇圖/chiikawa/貼紙/800x_003.jpg">
+                <div class="content">
+                    <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/貼紙/800x_002.jpg" alt="">
+                    <h3>貼紙類</h3>
+                    <p>吉伊卡哇限定貼紙</p>
+                </div>
+            </div>
+
+            <!--第三個商品玩偶-->
+            <div class="box">
+                <img class="image" src="../chiikawa/images/吉伊卡哇圖/chiikawa/吊飾玩偶/800x_002.jpg" >
+                <div class="content">
+                    <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/吊飾玩偶/800x.jpg" alt="">
+                    <h3>吊飾類</h3>
+                    <p>吉伊卡哇限定吊飾玩偶</p>
+                </div>
+            </div>
+
+            <!--第四個商品壓克力板-->
+            <div class="box">
+                <img class="image" src="../chiikawa/images/吉伊卡哇圖/chiikawa/壓克力板/800x.jpg" >
+                <div class="content">
+                    <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/壓克力板/800x_006.jpg" alt="">
+                    <h3>壓克力板</h3>
+                    <p>吉伊卡哇限定壓克力板</p>
+                </div>
+            </div>
+
+            <!--第五個商品罐頭盲盒-->
+            <div class="box">
+                <img class="image" src="../chiikawa/images/吉伊卡哇圖/chiikawa/罐頭盲盒/800x.jpg" >
+                <div class="content">
+                    <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/罐頭盲盒/800x_002.jpg" alt="">
+                    <h3>罐頭盲盒</h3>
+                    <p>吉伊卡哇罐頭盲盒</p>
+                </div>
+            </div>
+
+            <!--
+                <h1 class="heading">Chiikawa<span>商品</span></h1> 先給上h1標籤classing是一個標題 chiikawa
+                //商品給上span是為了之後要給他別的顏色
+                <div class="box-container">
+            <div class="box">
+                //第一個盒子
+                <img class="image" src="../chiikawa/images/吉伊卡哇圖/chiikawa/扭蛋/800x.webp">
+                盒子裡面先給上一個圖片
+                <div class="content">
+                //內容
+                    <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/扭蛋/800x_002.webp" alt="">
+                //內容裡面的第一個圖片
+                //放兩個圖片是為了等等做 滑鼠放上去會切換圖片的效果
+                    <h3>扭蛋類</h3>
+                //標題
+                    <p>吉伊卡哇限定扭蛋</p>
+                //介紹
+                </div>
+            </div>
+                這樣內容部分就完成了 之後再到css給他效果
+            -->
+
+
+
+        </div>
+    </section>
+
+
+
+    <!--第四區菜單-->
+    <section class="menu" id="menu"> 
+        <h1 class="heading">Chiikawa<span>娃娃</span></h1>
+        <div class="box-container">
+            <!--第一個box 第一個商品-->
+            <div class="box">
+                <span class="price">¥2,530</span>
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/商品圖/4582662906549_1_590x.webp" alt="">
+                <h3>千川毛絨玩具S-小吉伊</h3>
+                <div class="stars">
+                    <!--抓Font Awesom裏頭的stars-->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <!--far fa-star 是空白的星星-->
+                </div>
+                <a href="#" class="btn2">訂購</a>
+                <!--訂購的按鈕-->
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+            </div>
+            <!--第二個box 第二個商品-->
+            <div class="box">
+                <span class="price">¥2,200</span>
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/商品圖/4582662905665_1_590x.webp" alt="">
+                <h3>千川毛絨玩具S-キメラ</h3>
+                <div class="stars">
+                    <!--抓Font Awesom裏頭的stars-->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <!--far fa-star 是空白的星星-->
+                </div>
+                <a href="#" class="btn2">訂購</a>
+                <!--訂購的按鈕-->
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+            </div>
+            <!--第三個box 第三個商品-->
+            <div class="box">
+                <span class="price">¥2,200</span>
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/商品圖/4582662906532_1_590x.webp" alt="">
+                <h3>千川毛絨玩具S-古本屋</h3>
+                <div class="stars">
+                    <!--抓Font Awesom裏頭的stars-->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <!--far fa-star 是空白的星星-->
+                </div>
+                <a href="#" class="btn2">訂購</a>
+                <!--訂購的按鈕-->
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+            </div>
+
+            <!--第四個box 第四個商品-->
+
+            <div class="box">
+                <span class="price">¥1,980</span>
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/商品圖/4582698661153_590x.webp" alt="">
+                <h3>千川毛絨玩具S-小桃鼠</h3>
+                <div class="stars">
+                    <!--抓Font Awesom裏頭的stars-->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <!--far fa-star 是空白的星星-->
+                </div>
+                <a href="#" class="btn2">訂購</a>
+                <!--訂購的按鈕-->
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="price">¥1,980</span>
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/商品圖/4582698661146_590x.webp" alt="">
+                <h3>千川毛絨玩具S-小八貓</h3>
+                <div class="stars">
+                    <!--抓Font Awesom裏頭的stars-->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <!--far fa-star 是空白的星星-->
+                </div>
+                <a href="#" class="btn2">訂購</a>
+                <!--訂購的按鈕-->
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!--第五區人物介紹-->
+    <section class="gallery" id="gallery">  <!--gallery是圖畫 人物介紹部分-->
+        <h1 class="heading">Chiikawa<span>人物介紹</span></h1>
+        <div class="box-container">
+            <!--第一張圖片-->
+            <div class="box">
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa-gif/小可愛.gif">
+                <div class="content">
+                    <h3>小動物們</h3>
+                    <p>要打怪賺錢，為了賺更多錢必須考試，要喝酒也必須考取很難考的資格才可以喝。</p>
+                    
+                </div>
+            </div>
+
+            <!--第二張圖片-->
+            <div class="box">
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa-gif/盔甲人.gif">
+                <div class="content">
+                    <h3>鎧甲人</h3>
+                    <p>有時候發配任務、開店、賣東西，偶爾會幫忙打怪，會和小動物一起相處。</p>
+                </div>
+            </div>
+
+            <!--第三張圖片-->
+            <div class="box">
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa-gif/怪物.gif">
+                <div class="content">
+                    <h3>怪物</h3>
+                    <p>奇妙的生物分為友好型以及擬態型，擬態型會對生物造成危害。友好型能夠進行對話。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--第六區評論-->
+    <section class="review" id="review">  <!--review是評論-->
+        <h1 class="heading">Chiikawa<span>評論</span></h1>
+        <div class="box-container">
+            <!--第一個評論-->
+            <div class="box">
+                <img src="../chiikawa/images/評論者/girl1.png">
+            <h3>姝(Shu)</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>小八好可愛!!</p>
+        </div>
+
+         <!--第二個評論-->
+         <div class="box">
+            <img src="../chiikawa/images/評論者/girl2.png">
+        <h3>想吃吉伊</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>吉伊卡哇超可愛!!!!</p>
+    </div>
+
+         <!--第三個評論-->
+         <div class="box">
+            <img src="../chiikawa/images/評論者/girl3.png">
+        <h3>苓醬與貓</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>喜歡吉伊卡哇~~</p>
+    </div>
+
+        </div>
+    </section>
+
+    <!--額外加的圖片-->
+    <section class="immg" id="immg">
+        <div class="box-container">
+        <img src="../chiikawa/images/chiikawa/footer-chiikawa.webp" >
+
+        </div>
+    </section>
+    
+  
+    
+    
+    <!--第七區訂購-->
+    <section class="order" id="order">  <!--order是訂購-->
+        <h1 class="heading">Chiikawa<span>訂購專區</span></h1>
+        <div class="box-container">
+            <div class="row">
+                <div class="image">
+                    <!--建立圖片的區塊 方便css控制-->
+                <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/GAftg0taAAAbBYM.jpg" alt="">
+                <!--左邊有圖片 右邊式表格表單-->
+                </div>
+                <form action="">
+                    <div class="inputbox">  <!--建立一個區塊 裡面全部都是inputbox 做表單的第一列-->
+                        <input type="text" placeholder="姓名"> 
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="inputbox">  <!--表單的第二列-->
+                        <input type="number" placeholder="電話">
+                        <input type="text" placeholder="取貨時間">
+                    </div>
+                    <!--名字跟id可以先不打 等有資料庫的程式語言才需要用-->
+                    <TExtarea name="" id="" cols="30" rows="10">
+                    </TExtarea>
+                    <!--類似留言板 可以讓人打字留言-->
+                    <!--cols="30" rows="10寬跟高-->
+                    <input type="submit" value="訂購" class="btn3">
+                    <!--訂購按鈕-->
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!--第八區footer-->
+    <section class="footer" id="footer">  
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-square" style="color: blue;font-size: 30px;"></i></a>
+            <!--用a標籤產生連結作用 在裏頭在建立一個標籤 用藍色-->
+            <a href="#"><i class="fab fa-instagram-square" style="color: rgb(219, 20, 186);font-size: 30px;"></i></a>
+            <a href="#"><i class="fab fa-line" style="color: rgb(20, 207, 14);font-size: 30px;"></i></a>
+        </div>
+        <h1 class="credit">由<span>立瑜設計</span>版權所有&copy;</h1>
+
+    </section>
+
+    <!--回上層按鈕-->
+    <a href="#home" class="fas fa-angle-up" id="scroll-up"></a>
+    
+</body>
+
+<!--JS連結-->
+
+<script src="js/script.js"></script>
+
+</html>

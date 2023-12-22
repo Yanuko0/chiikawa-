@@ -810,6 +810,10 @@ section{
     /*讓選單導覽列的內容顯示出來*/
     /*因為還沒有active 所以要用到js 來把第一區的內容 產生到active裏頭*/
 
+    headr .logo2 img{
+        width:0%
+    }
+
     /*第二區 由於是響應式網站所以對手機版本做調整*/
     .home .content{
         text-align: center;

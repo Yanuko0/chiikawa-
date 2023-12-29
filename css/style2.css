@@ -12,6 +12,11 @@ body .logo{
     text-decoration: none; 
 }
 
+body .navbar a{
+    text-decoration: none; 
+}
+
+
 .content1{
     display: flex;
 }

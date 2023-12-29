@@ -16,6 +16,11 @@ body .navbar a{
     text-decoration: none; 
 }
 
+.Navigation .熱門頁面 h2{
+    font-size: 20px;
+    
+}
+
 
 .content1{
     display: flex;
@@ -48,6 +53,12 @@ body .navbar a{
     letter-spacing: 0.034em;
     
     overflow-y: scroll;
+}
+
+.character .content1 .ch1 p{
+
+    font-size: 20px;
+
 }
 
 

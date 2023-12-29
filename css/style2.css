@@ -88,13 +88,13 @@ body .navbar a{
 @media(max-width:600px){
 
 .character .content1 .image0{
-    width: 400px;
+    
         /*調整新產品的圖片大小*/
-    margin-top: 80px;
+    margin-top: 90px;
         /*調整高度*/
     margin-left: -30px;
 }
-
+    
 .character .content1 .ch1{
     display: none;
 }

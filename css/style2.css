@@ -1,0 +1,104 @@
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content1{
+    display: flex;
+}
+
+.content1 .image0 img{
+    margin: auto;
+  display: block;
+}
+
+
+.character{ 
+     
+    height: 75vh;
+    width: 70%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid rgb(51, 39, 43);
+    box-shadow: rgb(0, 0, 0 / 20% ) 0px 2px 1px -1px, rgb(0, 0, 0 / 14% ) 0px 1px 1px 0px,
+    rgb(0, 0, 0 / 12% ) 0px 1px 3px 0px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+    color: #333;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.034em;
+    
+    overflow-y: scroll;
+}
+
+
+.Navigation{
+
+    text-align: left;
+    height: 75vh;
+    width: 300px;
+    padding: 5px;
+    max-width: 200px;
+
+}
+
+.Navigation .img1 img{
+    max-width: 200px;
+}
+
+.character::-webkit-scrollbar{
+    display: none;
+
+}
+
+.content1 .idname p{
+    font-size: 17px;
+}
+
+.character::-webkit-scrollbar{
+    display: none;
+
+}
+
+
+@media(max-width:600px){
+
+.character .content1 .ch1{
+    display: none;
+}
+
+.character .content1 img{
+    width: 200px;
+}
+
+.character .content1 p{
+    font-size: 16px;
+}
+
+.Navigation .img1{
+    display: none;
+}
+
+.Navigation .熱門頁面 img{
+    width: 30px;
+
+}
+.Navigation .熱門頁面 h2{
+    font-size: 16px;
+}
+
+.Navigation .熱門頁面 a{
+    font-size: 8px;
+}
+
+}

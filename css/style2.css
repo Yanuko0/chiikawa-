@@ -8,6 +8,10 @@ body{
     justify-content: center;
 }
 
+body .logo{
+    text-decoration: none; 
+}
+
 .content1{
     display: flex;
 }
@@ -68,6 +72,11 @@ body{
 .character::-webkit-scrollbar{
     display: none;
 
+}
+
+.Navigation .熱門頁面 a{
+    text-decoration: none; 
+    
 }
 
 

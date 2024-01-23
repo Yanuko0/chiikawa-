@@ -291,8 +291,10 @@ section{
 }
 
 .category .box-container .box .content img{
-    height: 170px;     
-    margin: 15px;
+    display: block;
+    margin: 15px auto;
+    max-width: 100%; /* 如果需要，可以根據你的需求設定最大寬度 */
+    height: 170px;
 }
 /*改格子內img的照片大小寬高以及間距*/
 

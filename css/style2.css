@@ -105,6 +105,11 @@ body .navbar a{
 
 @media(max-width:600px){
 
+.character {
+    height: 86vh;
+}
+
+
 
 .character .content1 .image0{
     

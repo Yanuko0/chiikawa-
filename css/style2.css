@@ -162,12 +162,13 @@ body .navbar a{
 
 .熱門頁面 {
         position: fixed;
-        top: 23vh;
+        top: 25vh;
         /* 上方三分之一的位置 */
-        right: 20px;
+        right: 10px;
         /* 右側對齊 */
-        width: 10px;
+        width: 30px;
         /* 寬度 */
+        max-width: 30px; /* 最大寬度 */
 }
 
 .熱門頁面 p {

@@ -164,11 +164,13 @@ body .navbar a{
         position: fixed;
         top: 25vh;
         /* 上方三分之一的位置 */
-        right: 10px;
+        right: 20px;
         /* 右側對齊 */
-        width: 30px;
+        width: 50px;
         /* 寬度 */
-        max-width: 30px; /* 最大寬度 */
+        max-width: 50px; /* 最大寬度 */
+        padding-left: 10px;
+        margin-left: 10px;
 }
 
 .熱門頁面 p {

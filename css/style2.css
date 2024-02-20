@@ -161,8 +161,13 @@ body .navbar a{
 }
 
 .熱門頁面 {
-    flex-direction: column;
-    margin-top: -50px; /* 負值表示向上移動 */
+        position: fixed;
+        top: 23vh;
+        /* 上方三分之一的位置 */
+        right: 20px;
+        /* 右側對齊 */
+        width: 10px;
+        /* 寬度 */
 }
 
 .熱門頁面 p {

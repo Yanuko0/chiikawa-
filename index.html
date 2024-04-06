@@ -24,13 +24,15 @@
             <nav class="navbar">
                 <!--nav導覽列 下面是導覽列裡面的內容-->
                 <a href="#home">首頁</a>
-                <a href="#category">新產品</a>
-                <a href="#menu">娃娃</a>
-                <a href="#gallery">人物介紹</a>
-                <a href="#review">評論</a>
-                <a href="#order">訂購</a>
+                <a href="#category-anchor">新產品</a>
+                <a href="#menu-anchor">娃娃</a>
+                <a href="#gallery-anchor">人物介紹</a>
+                <a href="#review-anchor">評論</a>
+                <a href="#order-anchor">訂購</a>
             </nav>
         
+
+          
 
 
     </header>
@@ -44,9 +46,11 @@
             <a href="更多介紹.html" class="btn">更多介紹</a>
         </div>
         <img src="images/吉伊卡哇圖/chiikawa-gif/chiikawa-ちいかわ.gif" alt="" width="500px">
+        <!-- 當作跳轉點 -->
+        <div id="category-anchor"></div> 
+        
     </section>
    
-
 
 
     <!--第三區 商品-->
@@ -109,11 +113,11 @@
                 <div class="box-container">
             <div class="box">
                 //第一個盒子
-                <img class="image" src="../chiikawa/images/吉伊卡哇圖/chiikawa/扭蛋/800x.webp">
+                <img class="image" src="images/吉伊卡哇圖/chiikawa/扭蛋/800x.webp">
                 盒子裡面先給上一個圖片
                 <div class="content">
                 //內容
-                    <img src="../chiikawa/images/吉伊卡哇圖/chiikawa/扭蛋/800x_002.webp" alt="">
+                    <img src="images/吉伊卡哇圖/chiikawa/扭蛋/800x_002.webp" alt="">
                 //內容裡面的第一個圖片
                 //放兩個圖片是為了等等做 滑鼠放上去會切換圖片的效果
                     <h3>扭蛋類</h3>
@@ -125,12 +129,11 @@
                 這樣內容部分就完成了 之後再到css給他效果
             -->
 
-
-
+             <!-- 當作跳轉點 -->
+            <div id="menu-anchor"></div> 
         </div>
-    </section>
-
-
+    
+    </section> 
 
     <!--第四區菜單-->
     <section class="menu" id="menu"> 
@@ -247,14 +250,16 @@
                     <a href="" class="fas fa-share"></a>
                     <a href="" class="fas fa-eye"></a>
                 </div>
+
             </div>
-
-
+        <!-- 當作跳轉點 -->
+        <div id="gallery-anchor"></div>
         </div>
+
     </section>
 
 
-
+ 
     <!--第五區人物介紹-->
     <section class="gallery" id="gallery">  <!--gallery是圖畫 人物介紹部分-->
         <h1 class="heading">Chiikawa<span>人物介紹</span></h1>
@@ -277,6 +282,8 @@
                     <p>有時候發配任務、開店、賣東西，偶爾會幫忙打怪，會和小動物一起相處。</p>
                 </div>
             </div>
+            <!-- 當作跳轉點 -->
+           <div id="review-anchor"></div>
 
             <!--第三張圖片-->
             <div class="box">
@@ -286,7 +293,9 @@
                     <p>奇妙的生物分為友好型以及擬態型，擬態型會對生物造成危害。友好型能夠進行對話。</p>
                 </div>
             </div>
+           
         </div>
+           
     </section>
 
 
@@ -340,6 +349,8 @@
         </div>
     </section>
 
+       <!-- 當作跳轉點 -->
+    <div id="order-anchor"></div>
     <!--額外加的圖片-->
     <section class="immg" id="immg">
         <div class="box-container">
@@ -347,7 +358,7 @@
 
         </div>
     </section>
-    
+ 
   
     
     
@@ -381,7 +392,6 @@
             </div>
         </div>
     </section>
-
 
     
     <!--第八區footer-->

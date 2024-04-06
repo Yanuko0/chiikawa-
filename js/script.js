@@ -3,6 +3,8 @@ let menu=document.querySelector("#menu-bar");
 let navbar=document.querySelector(".navbar");
 //讓navbar那邊 用document來抓資料.querySelector 是CSS最前面的值  抓的值叫"#navbar"
 
+//獲取導航欄位的a
+const links = document.querySelectorAll('.navbar a');
 
 //按下menubar按鈕之後產生的變化
 menu.onclick =() =>{     //按下menu.onclick時產生一個函數() 這個函數會去跑=>{ 程式內容  }  
@@ -13,6 +15,16 @@ menu.onclick =() =>{     //按下menu.onclick時產生一個函數() 這個函�
     navbar.classList.toggle("active");
     // navbar改變 轉換成"active"
 } //會套用到css header .navbar .active 這邊
+
+//如果a被點擊 且狀態欄是開得 關閉狀態欄
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        if (menu.classList.contains('fa-times')) {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+    });
+});
 
 //回到上層按鈕
 window.onscroll=()=>{

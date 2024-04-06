@@ -5,37 +5,37 @@ nav.navbar a[href="#movie"] {
     display: none;
 }
 
-body{
+body {
     margin: 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-body .logo{
-    text-decoration: none; 
+body .logo {
+    text-decoration: none;
 }
 
-body .navbar a{
-    text-decoration: none; 
+body .navbar a {
+    text-decoration: none;
 }
 
 
 
-.content1{
+.content1 {
     display: flex;
 }
 
-.content1 .image0 img{
+.content1 .image0 img {
     margin: auto;
-  display: block;
+    display: block;
 }
 
 
-.character{ 
-     
+.character {
+
     height: 82vh;
     width: 70%;
     max-width: 1200px;
@@ -43,8 +43,8 @@ body .navbar a{
     border-radius: 10px;
     padding: 30px;
     border: 1px solid rgb(51, 39, 43);
-    box-shadow: rgb(0, 0, 0 / 20% ) 0px 2px 1px -1px, rgb(0, 0, 0 / 14% ) 0px 1px 1px 0px,
-    rgb(0, 0, 0 / 12% ) 0px 1px 3px 0px;
+    box-shadow: rgb(0, 0, 0 / 20%) 0px 2px 1px -1px, rgb(0, 0, 0 / 14%) 0px 1px 1px 0px,
+        rgb(0, 0, 0 / 12%) 0px 1px 3px 0px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
@@ -53,18 +53,18 @@ body .navbar a{
     font-size: 17px;
     line-height: 1.7;
     letter-spacing: 0.034em;
-    
+
     overflow-y: scroll;
 }
 
-.character .content1 .ch1 p{
+.character .content1 .ch1 p {
 
     font-size: 20px;
 
 }
 
 
-.Navigation{
+.Navigation {
 
     text-align: left;
     height: 75vh;
@@ -74,127 +74,151 @@ body .navbar a{
 
 }
 
-.Navigation .img1 img{
+.Navigation .img1 img {
     max-width: 200px;
 }
 
-.character::-webkit-scrollbar{
+.character::-webkit-scrollbar {
     display: none;
 
 }
 
-.content1 .idname p{
+.content1 .idname p {
     font-size: 17px;
 }
 
-.character::-webkit-scrollbar{
+.character::-webkit-scrollbar {
     display: none;
 
 }
 
-.Navigation .熱門頁面 a{
-    text-decoration: none; 
-    
+.Navigation .熱門頁面 a {
+    text-decoration: none;
+
 }
 
 
-.Navigation .熱門頁面 h2{
+.Navigation .熱門頁面 h2 {
     font-size: 20px;
 }
 
 
-@media(max-width:600px){
+@media(max-width:600px) {
 
-.character {
-    height: 86vh;
-}
+    .character {
+        height: 86vh;
+    }
 
 
+    .character .content1 .image0 {
 
-.character .content1 .image0{
-    
         /*調整新產品的圖片大小*/
-    margin-top: 90px;
+        margin-top: 90px;
         /*調整高度*/
-    margin-left: -30px;
-}
+        margin-left: -30px;
+    }
 
-.character .content1 div {
-    width: 130%; /* 或者你想要的其他寬度百分比 */
-    margin: auto; /* 水平置中 */
-} 
+    .character .content1 div {
+        width: 130%;
+        /* 或者你想要的其他寬度百分比 */
+        margin: auto;
+        /* 水平置中 */
+    }
 
 
-.character .content1 .ch1{
-    display: none;
-}
+    .character .content1 .ch1 {
+        display: none;
+    }
 
-.character .content1 img{
-    width: 200px;
-}
+    .character .content1 img {
+        width: 200px;
+    }
 
-.character .content1 p{
-    font-size: 16px;
-}
+    .character .content1 p {
+        font-size: 16px;
+    }
 
-.Navigation .img1{
-    display: none;
-}
+    .Navigation .img1 {
+        display: none;
+    }
 
-.Navigation .熱門頁面 img{
-    width: 30px;
+    .Navigation .熱門頁面 img {
+        width: 30px;
 
-}
-.Navigation .熱門頁面 h2{
-    font-size: 16px;
-}
+    }
 
-/* .Navigation .熱門頁面 a{
+    /* .Navigation .熱門頁面 a{
     font-size: 8px;
 } */
 
-.Navigation .熱門頁面 h2{
-    font-size: 0px;
-}
+    .Navigation .熱門頁面 h2 {
+        font-size: 0px;
+        /* display: none; */
+    }
 
-.Navigation .熱門頁面 h2::after{
-    content: "角色";
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+    .Navigation .熱門頁面 h2::after {
+        content: "角色";
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 
-.熱門頁面 {
+
+    .熱門頁面 {
         position: fixed;
         top: 25vh;
         /* 上方三分之一的位置 */
-        right: 10px;
+        right: 30px;
         /* 右側對齊 */
         width: 50px;
         /* 寬度 */
-        max-width: 50px; /* 最大寬度 */
+        max-width: 50px; 
         padding-left: 10px;
         margin-left: 10px;
-}
+    }
 
-.熱門頁面 p {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* 元素靠右對齊 */
+
+    .熱門頁面 p {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* 元素靠右對齊 */
+
+    }
+
+    .熱門頁面 p a {
+        text-decoration: none;
+        font-size: 0;
+        /* 隱藏文字 */
+        margin: 0;
+        /* 隱藏超連結預設的空白間隔 */
+
+    }
+
+    .熱門頁面 p img {
+        margin-left: 5px;
+        /* 設置圖片和文字之間的間距 */
+    }
+
+    .ch2{
+        flex: 1; 
+        max-width:350px;
+        overflow-x: hidden; 
+        white-space: pre-wrap; /* 允許換行 */
+    }
+
+    .Navigation{
+        flex: 1;
+        max-width: 0px
+    }
+
+    .ch2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
-}
-.熱門頁面 p a {
-    text-decoration: none;
-    font-size: 0; /* 隱藏文字 */
-    margin: 0; /* 隱藏超連結預設的空白間隔 */
-}
-.熱門頁面 p img {
-    margin-left: 5px; /* 設置圖片和文字之間的間距 */
-}
-
-
-
 
 
 }

@@ -203,8 +203,7 @@ body .navbar a {
 
     .ch2{
         flex: 1; 
-        max-width:350px;
-        overflow-x: hidden; 
+        max-width:250px;
         white-space: pre-wrap; /* 允許換行 */
     }
 

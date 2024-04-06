@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chiikawa-更多介紹</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--有一些小圖示需要-->
+    <!--CSS連結-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- 用於解析ES6語法 -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="images/chiikawa/welcome.jpg" width="180" align="bottom">Chiikawa
+            <a href="#" class="logo2">
+                <img src="images/chiikawa/logo_chiikawamarket.jpg" width="300" align="middle">
+            </a>
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <!--fas f-bars 是從font Awesome來的 為了讓網站變成響應式網站(手機可以用)-->
+        <nav class="navbar">
+            <!--nav導覽列 下面是導覽列裡面的內容-->
+            <a href="chiikawa.html">首頁</a>
+            <a href="#comics">漫畫</a>
+            <a href="#movie">影片</a>
+        </nav>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <section class="character" id="character" style="flex: 5;">
+        <div class="content1">
+
+            <div class="ch1"></div>
+            <script type="text/babel">
+                class Introduction extends React.Component {
+                    //定義組件
+                    constructor(props) {
+                        super(props)
+                        this.state = {
+                            name: "吉伊卡哇",
+                            name2: "ちいかわ",
+                            abbreviation: "吉伊、小可愛、小白。",
+                            birthday: "2017年5月1日",
+                            weapon: "粉色的討伐棍"
+
+                        }
+                    }
+
+                    Chiikawa = () => {
+                        this.setState(
+                            {
+                                name: "吉伊卡哇",
+                                name2: "ちいかわ",
+                                abbreviation: "吉伊、小可愛、小白。",
+                                birthday: "2017年5月1日",
+                                weapon: "粉色的討伐棍"
+                            }
+                        )
+                    }
+
+                    BaoCat = () => {
+                        this.setState(
+                            {
+                                name: "小八貓",
+                                name2: "ハチワレ",
+                                abbreviation: "小八、八字貓、小藍。",
+                                birthday: "2020年5月1日 ",
+                                weapon: "藍色的討伐棍"
+                            }
+                        )
+                    }
+
+                    Rabbit = () => {
+                        this.setState(
+                            {
+                                name: "兔兔",
+                                name2: "うさぎ",
+                                abbreviation: "烏薩奇、兔子。",
+                                birthday: "2019年1月22日",
+                                weapon: "黃色的棍棒"
+                            }
+                        )
+                    }
+
+                    FlyingSquirrel = () => {
+                        this.setState(
+                            {
+                                name: "飛鼠",
+                                name2: "モモンガ",
+                                abbreviation: "桃鼠、momo、萌萌卡。",
+                                birthday: "未知",
+                                weapon: "未知"
+                            }
+                        )
+                    }
+
+                    ChestnutBun = () => {
+                        this.setState(
+                            {
+                                name: "栗子饅頭",
+                                name2: "くりまんじゅう",
+                                abbreviation: "栗饅前輩。",
+                                birthday: "未知",
+                                weapon: "未知"
+                            }
+                        )
+                    }
+
+
+
+      
+                    render() {
+                        return <div style={{ flex: 2 }}>
+                            <br />
+                            <br />
+                            <h2>基本介紹</h2>
+                            <hr />
+                            <p><b>角色名:</b>{this.state.name}</p>
+                            <p>日語：{this.state.name2}</p>
+                            <p>又稱{this.state.abbreviation}</p>
+                            <br />
+                            <p><b>生日:</b>{this.state.birthday} </p>
+                            <br />
+                            <p><b>武器:</b>{this.state.weapon}</p>
+                            <br />
+                        </div>
+
+
+
+                    }
+                }
+                const introductionRef = React.createRef();
+                ReactDOM.render(
+                    //渲染
+                    <Introduction ref={introductionRef}/>,
+                    document.querySelector(".ch1")
+                )
+                
+            </script>
+
+
+
+
+
+
+            <div style="flex:3;" class="ch2"></div>
+            <script type="text/babel">
+                class Detailed_Introduction extends React.Component {
+                    //定義組件
+                    constructor(props) {
+                        super(props)
+                        this.state = {
+                            img: "images/角色介紹/吉伊01.webp",
+                            introduction: [
+                                "《吉伊卡哇》系列中的主要角色之一。",
+                                "身體小小的，毛髮是白色，尾巴是小小的圓球。",
+                                "天氣變冷時毛髮會變長，不修剪的話會長痱子。",
+                                "雖然有點愛哭鬼，但內心很善良。性格內向和害羞，行事膽小慎重，",
+                                "但會在一些關鍵時刻機敏靈活化險為夷。",
+                                "心思細膩，會為朋友考慮，珍視友情。在重要的朋友遭遇危險時，會爆發出十足的勇氣。",
+                                "靠除草、採集和討伐為生，正努力備考五級除草證。",
+                                "獨處時，會在開心的時候唱歌。",
+                                "睡覺時會抱著棕色小熊玩偶。",
+                                "興趣是抽獎。運氣很好，常在各種抽獎活動中中獎。",
+                                "居住的房子也是在「超級可口酸奶」抽獎活動中獲得的。"
+                            ]
+
+                        }
+                    }
+
+                    Chiikawa = () => {
+                        this.setState(
+                            {
+                                img: "images/角色介紹/吉伊01.webp",
+                                introduction: [
+                                    "《吉伊卡哇》系列中的主要角色之一。",
+                                    "身體小小的，毛髮是白色，尾巴是小小的圓球。",
+                                    "天氣變冷時毛髮會變長，不修剪的話會長痱子。",
+                                    "雖然有點愛哭鬼，但內心很善良。性格內向和害羞，行事膽小慎重，",
+                                    "但會在一些關鍵時刻機敏靈活化險為夷。",
+                                    "心思細膩，會為朋友考慮，珍視友情。在重要的朋友遭遇危險時，會爆發出十足的勇氣。",
+                                    "靠除草、採集和討伐為生，正努力備考五級除草證。",
+                                    "獨處時，會在開心的時候唱歌。",
+                                    "睡覺時會抱著棕色小熊玩偶。",
+                                    "興趣是抽獎。運氣很好，常在各種抽獎活動中中獎。",
+                                    "居住的房子也是在「超級可口酸奶」抽獎活動中獲得的。"
+                                ]
+                            }
+                        )
+                    }
+
+                    BaoCat = () => {
+                        this.setState(
+                            {
+                                img: "images/角色介紹/小八貓01.webp",
+                                introduction: [
+                                    "《吉伊卡哇》系列中的主要角色之一。",
+                                    "是吉伊卡哇的好朋友，以八字貓咪為原型。",
+                                    "身體小小的，頭頂和尾巴的毛髮是藍色，其餘地方為白色，",
+                                    "尾巴長長的可以在地上拍打。天氣變冷時毛髮會變長。",
+                                    "性格外向，樂觀開朗，是個樂天派，可也會因此讓自己陷入危機。",
+                                    "善解人意，台詞較多，會替朋友們說出想表達的意思。會為朋友考慮，珍視友情。",
+                                    "在緊要關頭會大喊「總會有辦法的！」，多次拼盡全力衝出重圍。",
+                                    "靠除草、採集和討伐為生，已考取五級除草證。",
+                                    "會為了想要的東西（如討伐棍、相機）而努力存錢，過著節儉的生活。",
+                                    "較為惜物，餐具茶杯等有明顯的使用痕跡和裂紋。睡在陳舊的草蓆上。",
+                                    "喜歡下廚，會做各種平民料理。經常和朋友們分享食物。愛好攝影，喜歡給朋友們拍照。"
+                                ]
+                            }
+                        )
+                    }
+
+                    Rabbit = () => {
+                        this.setState(
+                            {
+                                img: "images/角色介紹/兔兔01.webp",
+                                introduction: [
+                                    "《吉伊卡哇》系列中的主要角色之一。",
+                                    "是吉伊和小八的好朋友，以兔子為原型。",
+                                    "身體小小的，身體的毛髮是黃色，尾巴為白色的大絨球。",
+                                    "靠除草、採集和討伐為生，已考取三級除草證。",
+                                    "性格活潑，精力充沛，無所畏懼，面對困難會想出很多點子。 ",
+                                    "看似大條和無所謂，但會在乎朋友們。樂於和朋友們分享食物，在朋友遇到困難時陪伴和保護對方，對抗敵人。 ",
+                                    "會發出各種奇特的叫聲來表達和溝通，如「烏拉」「呀哈」等，情緒高漲地跑來跑去。",
+                                    "行為難以預測，經常有出其不意的舉動。",
+                                    "戰鬥力較強，在緊要關頭能帶領同伴們扭轉局勢。",
+                                    "經常在二手店購入奇怪的道具。有時會拿來可疑的物品，也有因此受到詛咒的時候。",
+                                    "彈吉他的技藝高超。在地下洞穴里的酒吧當過DJ,用樹葉摩擦橡子發出音樂聲。",
+                                    "私生活充滿謎團。"
+                                ]
+                            }
+                        )
+                    }
+
+                    FlyingSquirrel = () => {
+                        this.setState(
+                            {
+                                img: "images/角色介紹/飛鼠01.webp",
+                                introduction: [
+                                    "以飛鼠為原型，由於「モモ」有桃子的意思，",
+                                    "因此也曾以嘴銜桃子的形象出場。",
+                                    "身體小小的，毛髮蓬鬆，身體部分為白色，大大的尾巴為藍色。",
+                                    "總是專注於研究「什麼樣的舉止才顯得可愛」，會要求他人的誇獎。",
+                                    "經常向其他角色討取東西。較為任性，表達訴求時理直氣壯和大聲。",
+                                    "似乎經常給勞動鎧添麻煩。 ",
+                                    "屢次試圖引起勞動鎧的關注，儘管有時會被無視。被拒絕時會哭和打滾。 ",
+                                    "很少參與勞動，採擷野外的食物填飽肚子。",
+                                    "在遇到古本後，也經常向古本討要食物。 ",
+                                    "會模仿吉伊和其他小可愛族的表情動作。對野外的食物有獨占欲",
+                                    "身體裡的靈魂似乎調換過。曾幾次被大強追逐要求「還回來」。"
+                                ]
+                            }
+                        )
+                    }
+
+                    ChestnutBun = () => {
+                        this.setState(
+                            {
+                                img: "images/角色介紹/栗子饅頭01.webp",
+                                introduction: [
+                                    "吉伊和小八的前輩。眼睛小小圓圓的，頭頂為棕色，身體為淡黃色，尾巴小而尖，面中有一些皺紋。",
+                                    "角色原型可能是蜜獾，但由於外形和名為栗子饅頭的點心相似，初登場時也在食用栗子饅頭，因此被讀者們稱為栗子饅頭/栗子饅頭前輩。",
+                                    "行為舉止比較老成，享受著美酒與下酒菜。",
+                                    "已經取得了飲酒資格證，好像也有為了取得飲酒資格證而無懼風雨不懈努力的過去。",
+                                    "擁有很多喝酒的技巧，也時常烹飪食物配酒。多次宿醉，並有各種應對宿醉的方式。",
+                                    "和吉伊一樣，並沒有太多台詞，只會在喝酒時發出「哈——」的聲音，面中的皺紋也會變多。",
+                                    "性格善良溫柔，照顧後輩，會請吉伊喝咖啡，責備兔兔的惡作劇，以及回答獅薩的問題。",
+                                    "生活比較安逸舒適，有時會參與除草。"
+                                ]
+                            }
+                        )
+                    }
+
+                    render() {
+                        return <div>
+                            <div class="image0">
+                                <img src={this.state.img} width="300px" />
+                            </div>
+                            <br />
+                            <div class="idname">
+                                <p><b>介紹:</b></p>
+
+                                {this.state.introduction.map((item, index) => (
+                                    <p key={index}>{item}</p>
+                                ))}
+                            </div>
+                        </div>
+
+                    }
+                }
+
+                const introductionRef2 = React.createRef();
+
+                ReactDOM.render(
+                    <Detailed_Introduction ref={introductionRef2} />,
+                    document.querySelector(".ch2")
+                )
+            </script>
+
+            <section class="Navigation" id="Navigation" style="flex: 1;">
+                <div class="img1">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/角色介紹/人物介紹.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="images/角色介紹/吉伊02.webp" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="images/角色介紹/小八貓02.webp" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="images/角色介紹/兔兔02.webp" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="images/角色介紹/飛鼠02.gif" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="images/角色介紹/栗子饅頭02.gif" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <br>
+
+
+                <div style="flex-direction: column;" class="熱門頁面"></div>
+                <script type="text/babel">
+                    class Redirect extends React.Component {
+                        //定義組件
+                        constructor(props) {
+                            super(props)
+                            this.state = {
+                                selectedCharacter: ""
+                            };
+                        }
+
+                        handleCharacterClick = (character) => {
+                            this.setState({ selectedCharacter: character });
+                        }
+
+                        render() {
+
+                            return (
+                                <div>
+                                    <h2>熱門頁面</h2>
+                                    <p><a id="Chiikawa" href="#" onClick={() => {introductionRef.current.Chiikawa();introductionRef2.current.Chiikawa()}}><img src="images/角色介紹/吉伊01.webp" width="50px" alt="吉伊卡哇" />吉伊卡哇</a></p>
+                                    <p><a id="BaoCat" href="#" onClick={() => {introductionRef.current.BaoCat();introductionRef2.current.BaoCat()}}><img src="images/角色介紹/小八貓01.webp" width="50px" alt="小八貓" />小八貓</a></p>
+                                    <p><a id="Rabbit" href="#" onClick={() => {introductionRef.current.Rabbit();introductionRef2.current.Rabbit()}}><img src="images/角色介紹/兔兔01.webp" width="50px" alt="兔兔" />兔兔</a></p>
+                                    <p><a id="FlyingSquirrel" href="#" onClick={() => {introductionRef.current.FlyingSquirrel();introductionRef2.current.FlyingSquirrel()}}><img src="images/角色介紹/飛鼠01.webp" width="50px" alt="飛鼠" />飛鼠</a></p>
+                                    <p><a id="ChestnutBun" href="#" onClick={() => {introductionRef.current.ChestnutBun();introductionRef2.current.ChestnutBun()}}><img src="images/角色介紹/栗子饅頭01.webp" width="50px" alt="栗子饅頭" />栗子饅頭</a></p>
+                                </div>
+                            );
+
+                        }
+
+                    }
+                    ReactDOM.render(
+                        <Redirect />,
+                        document.querySelector(".熱門頁面")
+                    )
+
+                </script>
+
+
+
+
+            </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
